@@ -176,4 +176,3 @@ class AboutMessagePassing < EdgeCase::Koan
   end
 
 end
-x
