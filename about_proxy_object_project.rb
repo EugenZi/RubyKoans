@@ -32,7 +32,6 @@ class Proxy
     def method_missing(method_name, *args, &block)
       if @object.respond_to? method_name then
         @messages.push method_name
-      
         @object.send method_name, *args
       else
         super method_name, *args, &block
